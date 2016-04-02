@@ -32,3 +32,21 @@ $.post(method, { '': previewLink }, function (data) {
 });
 ```
 
+Method /Api/Preveiew/ returns json type like this:
+
+```html
+{
+    "Url": null,
+    "Host": "james-nicoll.livejournal.com",
+    "Title": "my 55th birthday present! - More Words, Deeper Hole",
+    "Description": "Cut in case Also posted at Dreamwidth , where there are comment(s); comment here or there .",
+    "Text": "How very cool, thanks for sharing that! I wish it was bigger; even at this size it's fascinating. I was thinking ...",
+    "Images": [
+        "https://cdn.shopify.com/s/files/1/0211/4926/products/P-Space_ImgA_75cd7df5-3020-4839-8953-ad1358db2e9a_1024x1024.jpg?v=1457740955",
+        "http://s07.flagcounter.com/count/BDyO/bg=FFFFFF/txt=FFFFF1/border=FFFFFF/columns=1/maxflags=1/viewers=3/labels=0/pageviews=0/flags=0/",
+        "http://l-stat.livejournal.net/img/schemius/print-logo.png?v=49361"
+    ] 
+}
+```
+
+
