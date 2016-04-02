@@ -32,7 +32,7 @@ $.post(method, { '': previewLink }, function (data) {
 });
 ```
 
-Method /Api/Preveiew/ returns json type like this:
+Method /Api/Preview/ returns json type like this:
 
 ```html
 {
