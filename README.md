@@ -4,7 +4,7 @@ Asp.Net Web Api Facebook-Like Link Preview.
   Publish project on your IIS and use:
 </p>
 
-1 &bull; C#
+&bull; C#
 
 ```html
 string method = "http://localhost/BLink/Preview";
