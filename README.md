@@ -4,7 +4,7 @@
 
 &bull; C#
 
-```html
+```cs
 string method = "http://localhost/BLink/Api/Preview";
 string previewLink = "http://james-nicoll.livejournal.com/5605983.html";
 using (WebClient wc = new WebClient())
