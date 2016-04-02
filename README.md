@@ -34,7 +34,7 @@ Method /Api/Preview/ returns json type like this:
 
 ```html
 {
-    "Url": null,
+    "Url": 'http://james-nicoll.livejournal.com/5605983.html',
     "Host": "james-nicoll.livejournal.com",
     "Title": "my 55th birthday present! - More Words, Deeper Hole",
     "Description": "Cut in case Also posted at Dreamwidth , where there are comment(s); comment here or there .",
