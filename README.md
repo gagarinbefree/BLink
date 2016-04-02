@@ -20,7 +20,7 @@ using (WebClient wc = new WebClient())
 
 &bull; JavaScript (JQuery)
 
-```html
+```javascript
 var method = 'http://localhost/BLink/Api/Preview';
 var previewLink = 'http://james-nicoll.livejournal.com/5605983.html';
 $.post(method, { '': previewLink }, function (data) {
@@ -32,7 +32,7 @@ $.post(method, { '': previewLink }, function (data) {
 
 Method /Api/Preview/ returns json like this:
 
-```html
+```json
 {
     "Url": 'http://james-nicoll.livejournal.com/5605983.html',
     "Host": "james-nicoll.livejournal.com",
