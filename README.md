@@ -32,7 +32,7 @@ $.post(method, { '': previewLink }, function (data) {
 
 Method /Api/Preview/ returns json like this:
 
-```json
+```javascript
 {
     "Url": 'http://james-nicoll.livejournal.com/5605983.html',
     "Host": "james-nicoll.livejournal.com",
