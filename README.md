@@ -1,8 +1,6 @@
 # BLink
-Asp.Net Web Api Facebook-Like Link Preview.
-<p>
-  Publish project on your IIS and use:
-</p>
+<b>Asp.Net Web Api Facebook-Like Link Preview.</b>
+<p>Publish project on your IIS and use:</p>
 
 &bull; C#
 
