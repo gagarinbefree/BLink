@@ -22,7 +22,13 @@ namespace BLink.Controllers
         {
             try
             {
-                return Request.CreateResponse<IPreviewable>(_parser.Parse(value));
+                if (String.IsNullOrWhiteSpace(value))
+                    throw new Exception("Url is empty");
+
+                var response = Request.CreateResponse<IPreviewable>(_parser.Parse(value));
+                response.Headers.Add("Acess-Control-Allow-Origin", "*");
+
+                return response;
             }
             catch (Exception ex)
             {

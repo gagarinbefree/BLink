@@ -25,8 +25,9 @@ namespace BLink.Models
         {
             Uri uri = null;
             if (!Uri.TryCreate(url, UriKind.Absolute, out uri) || uri == null)
-                throw new Exception("Dont't create uri from url string");            
+                throw new Exception("Dont't create uri from url string");
 
+            _preview.Url = url;
             _preview.Host = uri.Host;
 
             _doc = _loadHtml(url);
