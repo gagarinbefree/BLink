@@ -23,7 +23,7 @@ namespace BLink.Models
             {
                 HtmlNodeCollection nodes = htmlDoc.DocumentNode.SelectNodes(path);
                 if (nodes != null)
-                {
+                {                    
                     foreach (HtmlNode node in nodes)
                     {
                         string imageUrl = "";
@@ -44,6 +44,9 @@ namespace BLink.Models
 
                         if (!String.IsNullOrWhiteSpace(imageUrl))
                             inners.Add(imageUrl);
+
+                        if (inners.Count() > 2)
+                            break;                        
                     }
                 }
             }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.IO;
 using System.Drawing;
+using System.Net;
 
 namespace BLink.Models
 {         
@@ -77,6 +78,7 @@ namespace BLink.Models
                 byte[] download = null;
                 using (System.Net.WebClient webClient = new System.Net.WebClient())
                 {
+                    webClient.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko");
                     download = webClient.DownloadData(url);
                 }
 
