@@ -76,9 +76,11 @@ namespace BLink.Models
             try
             {
                 byte[] download = null;
-                using (System.Net.WebClient webClient = new System.Net.WebClient())
+                using (WebClient webClient = new GZipWebClient())
                 {
                     webClient.Headers.Add("user-agent", "Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko");
+                    webClient.Headers.Add("Accept-Encoding", "gzip, deflate, sdch");
+
                     download = webClient.DownloadData(url);
                 }
 

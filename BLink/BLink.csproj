@@ -145,6 +145,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\GZipWebClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Models\Easily.cs" />
     <Compile Include="Models\Heavy.cs" />
     <Compile Include="Models\ILinkParseable.cs" />
