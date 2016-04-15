@@ -6,12 +6,13 @@ using System.Net.Http;
 using System.Web.Http;
 using BLink.Models;
 using System.Web.Mvc;
+using System.Web.Http.Cors;
 
 namespace BLink.Controllers
-{
+{    
     public class PreviewController : ApiController
     {
-        private ILinkParseable _parser;        
+        private ILinkParseable _parser;
 
         public PreviewController(ILinkParseable parser)
         {
@@ -25,8 +26,7 @@ namespace BLink.Controllers
                 if (String.IsNullOrWhiteSpace(value))
                     throw new Exception("Url is empty");
 
-                var response = Request.CreateResponse<IPreviewable>(_parser.Parse(value));
-                response.Headers.Add("Acess-Control-Allow-Origin", "*");
+                var response = Request.CreateResponse<IPreviewable>(_parser.Parse(value));                
 
                 return response;
             }
