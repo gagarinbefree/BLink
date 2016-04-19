@@ -45,7 +45,7 @@ namespace BLink.Models
                         if (!String.IsNullOrWhiteSpace(imageUrl))
                             inners.Add(imageUrl);
 
-                        if (inners.Count() > 2)
+                        if (inners.Count() > 4)
                             break;                        
                     }
                 }
